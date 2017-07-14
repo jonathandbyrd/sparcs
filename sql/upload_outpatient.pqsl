@@ -1,0 +1,55 @@
+\timing on
+\echo truncating table sparcs.outpatient...
+TRUNCATE TABLE sparcs.outpatient;
+
+\echo upload outpatient data
+\echo 1998
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT98_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 1999
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT99_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2000
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT00_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2001
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT01_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2002
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT02_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2003
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT03_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2004
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT04_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2005
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT05_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2006
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT06_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2007
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT07_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2008
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT08_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2009
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT09_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2010
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT10_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2011
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT11_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2012
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT12_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2013
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT13_E.DAT.csv' WITH (FORMAT CSV, NULL '')
+
+\echo 2014
+\copy sparcs.outpatient from '../../line-transform/app/output/120903OUT14_E.DAT.csv' WITH (FORMAT CSV, NULL '')
