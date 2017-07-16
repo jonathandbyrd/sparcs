@@ -1,3 +1,7 @@
+\timing on
+\echo removing duplicate rows
+\echo OUTPATIENT...
+
 with duplicates as
 (
   SELECT eupide, MAX(dischargenum) as max_dischargenum
@@ -10,7 +14,7 @@ using duplicates d
 where so.eupide = d.eupide
 and so.dischargenum < d.max_dischargenum;
 
-
+\echo INPATIENT...
 with duplicates as
 (
   SELECT eupide, MAX(dischargenum) as max_dischargenum
