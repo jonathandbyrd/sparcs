@@ -1,0 +1,1 @@
+odbc load, exec("SELECT * FROM sparcs.uvw_dcd_10") dsn("pgSql")
